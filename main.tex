@@ -34,6 +34,8 @@
 \usepackage{ifthen} % for conditional statements
 \usepackage{needspace} % for avoiding page brake right after the section title
 \usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{helvet}
+
 
 % Ensure that generate pdf is machine readable/ATS parsable:
 \ifPDFTeX
@@ -158,9 +160,9 @@
     }
     \newsavebox\ANDbox
     \sbox\ANDbox{$|$}
-
+    %------------------------------------- header ---------------------------------------------
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Rounak De
+        {\fontfamily{phv}\bfseries\fontsize{25pt}{25pt}\selectfont Rounak De}
 
         \vspace{5 pt}
 
@@ -173,7 +175,7 @@
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+91 9836748895}{9836748895}}%
+        \mbox{\hrefWithoutArrow{tel:+91 9836748895}{+91 9836748895}}%
         \kern 5.0 pt%
         \AND%
         %\kern 5.0 pt%
@@ -181,207 +183,229 @@
         %\kern 5.0 pt%
         %\AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername}}%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/rounakde/}{linkedin.com/in/rounakde}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/yourusername}{github.com/yourusername}}%
+        \mbox{\hrefWithoutArrow{https://github.com/rounakde2015}{github.com/rounakde2015}}%
     \end{header}
 
     \vspace{5 pt - 0.3 cm}
 
 
-    \section{Welcome to RenderCV!}
-
-
-
-        
+    \section{Professional Summary}
+       
         \begin{onecolentry}
-            \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
+            Software Engineer with \textbf{5+} years of experience architecting and delivering scalable web applications that address complex business needs and elevate user experiences. Skilled in modern frontend development, Micro Frontend Architecture, performance optimization, and cross-functional collaboration. Proven ability to drive innovation, solve challenging technical problems, and implement modern technologies that deliver measurable business value.
+
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+    %   \vspace{0.2 cm}
 
-        \begin{onecolentry}
-            The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        \end{onecolentry}
+    %    \begin{onecolentry}
+    %        The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
+    %    \end{onecolentry}
 
 
     
-    \section{Quick Guide}
+    %\section{Quick Guide}
 
-    \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-
-
-        \item Each section title is arbitrary and each section contains a list of entries.
-
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-        \item Select a section title, pick an entry type, and start writing your section!
-
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
+    %\begin{onecolentry}
+    %    \begin{highlightsforbulletentries}
 
 
-        \end{highlightsforbulletentries}
-    \end{onecolentry}
+    %    \item Each section title is arbitrary and each section contains a list of entries.
 
-    \section{Education}
+    %    \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
+
+    %    \item Select a section title, pick an entry type, and start writing your section!
+
+    %    \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
 
 
+    %    \end{highlightsforbulletentries}
+    %\end{onecolentry}
 
-        
-        \begin{twocolentry}{
-            Sept 2000 – May 2005
-        }
-            \textbf{University of Pennsylvania}, BS in Computer Science\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-                \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-            \end{highlights}
-        \end{onecolentry}
+    
 
 
 
     
-    \section{Experience}
-
-
-
+    \section{Professional Experience}
         
-        \begin{twocolentry}{
-            June 2005 – Aug 2007
-        }
-            \textbf{Software Engineer}, Apple -- Cupertino, CA\end{twocolentry}
-
+        \begin{twocolentry}
+            {Oct 2024 – Present}
+            \textbf{Packaged App Development Senior Analyst} 
+        \end{twocolentry}
+            \begin{twocolentry}
+            {Bengaluru, India} 
+            {Accenture} 
+        \end{twocolentry}
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-                \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-                \item Redesigned chat file format and implemented backward compatibility for search
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            June 2003 – Aug 2003
-        }
-            \textbf{Software Engineer Intern}, Microsoft -- Redmond, WA\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Publications}
-
-
-
-        
-        \begin{samepage}
-            \begin{twocolentry}{
-                Jan 2004
-            }
-                \textbf{3D Finite Element Analysis of No-Insulation Coils}
-            \end{twocolentry}
-
-            \vspace{0.10 cm}
-            
-            \begin{onecolentry}
-                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
-
-                \vspace{0.10 cm}
+                \item Spearheaded the migration of 8+ supply chain operation modules from Angular 9 to Angular 20, leveraging modern Angular features and architectural best practices to improve application performance by 25\% and reduce maintenance effort across successive releases.
                 
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
+                \item Engineered AWB Release, AWB Import/Export, and AWB Billing Clearance modules using Angular and TypeScript, streamlining shipment processing workflows and reducing manual operational effort by \textbf{20\%}.
+
+                \item Collaborated with \textbf{2} cross-functional vendor teams and onshore stakeholders in Singapore and Mexico to translate complex business requirements into scalable technical solutions, contributing to the successful delivery of \textbf{4} feature releases.
+
+                \item Partnered directly with business users and product stakeholders to analyze operational requirements, resolve \textbf{20+} functional defects, and improve system stability by \textbf{30\%} across key supply chain workflows.
+
+                \item Translated complex Figma wireframes and product requirements into responsive, \textbf{WCAG 2.1 AA-compliant} UI components, ensuring consistent cross-browser UX for supply chain users
+
+                \item Mentored \textbf{3} junior developers and freshers through technical coaching, code reviews, and pull request governance, reducing review rework by \textbf{25\%} and accelerating onboarding productivity within the first 3 months.
+
+                \item Established frontend development standards through rigorous code reviews and best-practice enforcement, reducing technical debt and improving code quality consistency across 8+ application modules.
+
+                \item Automated end-to-end testing for \textbf{10+} critical supply chain operation workflows using Cypress, increasing regression test coverage from \textbf{60\%} to \textbf{85\%} and reducing production defects by \textbf{30\%}.
+
+                \item Delivered scalable frontend enhancements using Angular, TypeScript, RxJS, and modern UI development practices, improving feature delivery efficiency by \textbf{20\%} across multiple product releases.
+
+                \item Coordinated development efforts across geographically distributed teams spanning \textbf{2} countries, ensuring \textbf{90\%} on-time release delivery while maintaining alignment between business objectives and technical implementation.
+            \end{highlights}
         \end{onecolentry}
-        \end{samepage}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}
+            {Sept 2020 – Oct 2024}
+            \textbf{Software Engineer} 
+        \end{twocolentry}
+            \begin{twocolentry}
+            {Bengaluru, India} 
+            {CGI} 
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Led the modernization of 6 legacy Windows-based modules into scalable web applications using Micro Frontend Architecture, improving maintainability and contributing to a \textbf{15\%} increase in product adoption within 12 months.
+                
+                \item Engineered a newsroom workflow platform for research management, story planning, script creation, multi-channel publishing, and rundown orchestration, driving a \textbf{20\%} increase in product demand across the German media market.
+                
+                \item Delivered frontend solutions for three enterprise products—including a Swedish public welfare platform, a Swedish ERP system, and a German newsroom management solution—supporting digital transformation initiatives across multiple international markets.
+
+                \item Architected reusable UI infrastructure components, including drag-and-drop frameworks, Kanban boards, workflow widgets, and advanced scrolling utilities, improving journalist productivity by \textbf{10\%} across daily editorial operations.
+
+                \item Optimized application performance through code refactoring, component reusability enhancements, and frontend architecture improvements, reducing rendering overhead and improving responsiveness across business-critical workflows.
+
+                \item Built scalable, responsive, and accessible user interfaces using Angular and Angular Material, accelerating feature delivery and ensuring a consistent user experience across multiple enterprise applications.
+
+                \item Implemented automated unit and end-to-end testing strategies using Karma, Jasmine, and Cypress, strengthening release stability and reducing production defects throughout the software development lifecycle.
+
+                \item Collaborated with product managers, UX designers, and backend engineers to deliver high-impact features across multiple release cycles, ensuring timely delivery and alignment with evolving business requirements.
+
+                \item Streamlined development workflows through Git-based version control, code reviews, and collaborative engineering practices, enabling efficient delivery of concurrent product enhancements and platform initiatives.
+            \end{highlights}
+        \end{onecolentry}
+
+    
+    %\section{Publications}
+        %\begin{samepage}
+        %   \begin{twocolentry}{
+        %        Jan 2004
+        %    }
+        %        \textbf{3D Finite Element Analysis of No-Insulation Coils}
+        %    \end{twocolentry}
+
+        %    \vspace{0.10 cm}
+            
+        %    \begin{onecolentry}
+        %        \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
+
+        %        \vspace{0.10 cm}
+                
+        %\href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
+        %\end{onecolentry}
+        %\end{samepage}
 
 
     
-    \section{Projects}
+    %\section{Projects}
+    %    \begin{twocolentry}{
+    %        \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
+    %    }
+    %        \textbf{Multi-User Drawing Tool}\end{twocolentry}
 
+    %    \vspace{0.10 cm}
+    %    \begin{onecolentry}
+    %        \begin{highlights}
+    %            \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
+    %            \item Tools Used: C++, MFC
+    %        \end{highlights}
+    %    \end{onecolentry}
 
+    %    \vspace{0.2 cm}
 
-        
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}\end{twocolentry}
+    %    \begin{twocolentry}{
+    %        \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
+    %    }
+    %        \textbf{Synchronized Desktop Calendar}\end{twocolentry}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{onecolentry}
+    %    \vspace{0.10 cm}
+    %    \begin{onecolentry}
+    %        \begin{highlights}
+    %            \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
+    %            \item Tools Used: C\#, .NET, SQL, XML
+    %        \end{highlights}
+    %    \end{onecolentry}
 
+    %    \vspace{0.2 cm}
 
-        \vspace{0.2 cm}
+    %    \begin{twocolentry}{
+    %        2002
+    %    }
+    %        \textbf{Custom Operating System}\end{twocolentry}
 
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            2002
-        }
-            \textbf{Custom Operating System}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry}
+    %    \vspace{0.10 cm}
+    %    \begin{onecolentry}
+    %        \begin{highlights}
+    %            \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
+    %            \item Tools Used: C
+    %        \end{highlights}
+    %    \end{onecolentry}
 
 
 
     
     \section{Technologies}
+        \begin{onecolentry}
+            \textbf{Programming Languages:} HTML5, CSS3, Sass, JavaScript(ES6+), TypeScript
+        \end{onecolentry}
+
+        %\vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Frameworks \& Library:} Angular(v20), Angular Material, Bootstrap, RxJs, NgRx, AG Grid
+        \end{onecolentry}
+
+        %\vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{State Management \& Testing:} Karma, Jasmine, Cypress, NgRx
+        \end{onecolentry}
+
+        %\vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Tools \& Platforms:} Azure DevOps, Jira, Git, GitHub, GitLab, Bitbucket, Confluence, VS Code, GitHub Copilot
+        \end{onecolentry}
 
 
-
+        \begin{onecolentry}
+            \textbf{Architecture \& Methodologies:} Micro Frontend Architecture, Agile/Scrum, CI/CD, Performance Optimization
+        \end{onecolentry}
         
+
+    \section{Education}
+        \begin{twocolentry}{August 2016 – July 2020}
+            \textbf{Guru Nanak Institute of Technology} 
+        \end{twocolentry}
+        \vspace{0.10 cm}
         \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
+            %\begin{highlights}
+            {Bachelor of Technology in Electronics and Communication Engineering}
+            %\end{highlights}
         \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-        \end{onecolentry}
-
-
-    
 
 \end{document}
