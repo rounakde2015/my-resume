@@ -1,2 +1,2 @@
 # my-resume
-Latex files for resume
+Latex file for my resume
